@@ -64,21 +64,29 @@
           <li><a href="#">Archives</a></li>
         </ul>
         <div class="bg"></div>
-        <h2>Sponsors</h2>
-        <ul class="sponsors">
-          <li class="sponsors"><a href="#">Lorem ipsum dolor</a><br />
-            Donec libero. Suspendisse bibendum</li>
-          <li class="sponsors"><a href="#">Dui pede condimentum</a><br />
-            Phasellus suscipit, leo a pharetra</li>
-          <li class="sponsors"><a href="#">Condimentum lorem</a><br />
-            Tellus eleifend magna eget</li>
-          <li class="sponsors"><a href="#">Fringilla velit magna</a><br />
-            Curabitur vel urna in tristique</li>
-          <li class="sponsors"><a href="#">Suspendisse bibendum</a><br />
-            Cras id urna orbi tincidunt orci ac</li>
-          <li class="sponsors"><a href="#">Donec mattis</a><br />
-            purus nec placerat bibendum</li>
-        </ul>
+<!-- the DIV that will contain the widget -->
+<div class="weatherWidget" ></div>
+
+<script>
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"W76ZN4PBMT4H7HBZDAKNC5TGR", //Sign up for your personal key
+       location:"Kurukshetra, Haryana, India", //Enter an address
+       unitGroup:"metric", //"us" or "metric"
+       forecastDays:4, //how many days forecast to show
+       title:"Kurukshetra, Haryana, India", //optional title to show in the 
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+</script>
         <div class="bg"></div>
         <h2>Search</h2>
         <div class="search">
