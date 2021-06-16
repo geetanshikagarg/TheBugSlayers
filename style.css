@@ -198,6 +198,27 @@ h1 small {
 	padding:3px 0 3px 0;
 	margin:5px 0 10px 10px;
 }
+.search-box {
+  position: absolute;
+  top: 95%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  background: #166474;
+  height: 40px;
+  border-radius: 40px;
+  padding: 8px;
+}
+.search-btn {
+  color: #ea7d1b;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .body p {
 	font:normal 19px "Times New Roman", Times, serif;
 	color:#575656;
