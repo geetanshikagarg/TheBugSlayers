@@ -7,6 +7,18 @@
 <script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript" src="js/georgia.js"></script>
 <script type="text/javascript" src="js/cuf_run.js"></script>
+<script src="https://kit.fontawesome.com/9c2d2b1b01.js" crossorigin="anonymous"></script>  
+<script>
+  function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+  </script>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa2F-7i-uzY9JgFSQh3EolSAT5vXRiBXI&callback=myMap"></script>
 </head>
 <body>
 <!-- START PAGE SOURCE -->
@@ -57,6 +69,21 @@ Three centuries ago, before the beginning of the industrial age, geological reco
 <li>Global CO2 levels hit new record in 2017: UN</li><br>
 <li>Greenland may lose 4.5 per cent ice by end of century: Study</li><br>
 </ul>
+          <h2> Search your City</h2>
+        <div class="search-box">
+          <input class="search-txt" type="text" name="" placeholder="Enter your Pin Code">
+          <a onclick="myMap()" class="seacrh-btn" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      <h3>
+       Locate on Map
+      </h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282235.484855777!2d73.72320398541733!3d20.75020545838404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1623837913670!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div id="googleMap">
+        
+      </div>
+      
         <h2>&nbsp;</h2>
       </div>
       <div class="right">
